@@ -10,7 +10,6 @@
     },
     "require": "babel-register"
   },
-  "bin": "./dist/bin/index.js",
   "dependencies": {
     "debug": "^3.0.1"
   },
