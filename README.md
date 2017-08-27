@@ -7,6 +7,10 @@
 
 Abstracts initialisation and shutdown of Express.js services.
 
+> Disclaimer: I just needed something that works for my Kubernetes setup.
+> This is far from a customisable service that could work across many
+> projects in different environments.  
+
 ## Behaviour
 
 Creates `/healthz` health-check endpoint.
