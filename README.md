@@ -1,7 +1,6 @@
 # express-process-manager
 
 [![Travis build status](http://img.shields.io/travis/gajus/express-process-manager/master.svg?style=flat-square)](https://travis-ci.org/gajus/express-process-manager)
-[![Coveralls](https://img.shields.io/coveralls/gajus/express-process-manager.svg?style=flat-square)](https://coveralls.io/github/gajus/express-process-manager)
 [![NPM version](http://img.shields.io/npm/v/express-process-manager.svg?style=flat-square)](https://www.npmjs.org/package/express-process-manager)
 [![Canonical Code Style](https://img.shields.io/badge/code%20style-canonical-blue.svg?style=flat-square)](https://github.com/gajus/canonical)
 [![Twitter Follow](https://img.shields.io/twitter/follow/kuizinas.svg?style=social&label=Follow)](https://twitter.com/kuizinas)
