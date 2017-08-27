@@ -37,7 +37,7 @@
   ],
   "license": "BSD-3-Clause",
   "main": "./dist/index.js",
-  "name": "usus",
+  "name": "express-process-manager",
   "repository": {
     "type": "git",
     "url": "https://github.com/gajus/express-process-manager"
