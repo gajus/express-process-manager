@@ -41,3 +41,21 @@ const server = app.listen(8080);
 createProcessManager(server, app);
 
 ```
+
+### Kubernetes readiness and liveness probe configuration
+
+```yaml
+readinessProbe:
+  httpGet:
+    path: /healthz
+    port: 8080
+  periodSeconds: 5
+  initialDelaySeconds: 5
+livenessProbe:
+  httpGet:
+    path: /healthz
+    port: 8080
+  periodSeconds: 5
+  initialDelaySeconds: 10
+
+```
