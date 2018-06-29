@@ -1,21 +1,14 @@
 {
   "plugins": [
-    [
-      "transform-object-rest-spread",
-      {
-        "useBuiltIns": true
-      }
-    ],
-    "transform-flow-strip-types"
+    "@babel/transform-flow-strip-types"
   ],
   "presets": [
     [
-      "env",
+      "@babel/env",
       {
         "targets": {
-          "node": 6
-        },
-        "useBuiltIns": true
+          "node": "current"
+        }
       }
     ]
   ]

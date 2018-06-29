@@ -5,31 +5,36 @@
     "url": "http://gajus.com"
   },
   "ava": {
-    "babel": {
-      "babelrc": true
-    },
-    "require": "babel-register"
+    "require": [
+      "@babel/register"
+    ]
   },
   "dependencies": {
-    "debug": "^3.0.1"
+    "debug": "^3.1.0"
   },
   "description": "Abstracts initialisation and shutdown of Express.js services.",
   "devDependencies": {
-    "ava": "^0.22.0",
-    "babel-cli": "^6.26.0",
-    "babel-plugin-transform-flow-strip-types": "^6.22.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.6.0",
-    "babel-register": "^6.26.0",
-    "eslint": "^4.5.0",
-    "eslint-config-canonical": "^9.3.1",
-    "flow-bin": "^0.53.1",
-    "flow-copy-source": "^1.2.1",
-    "husky": "^0.14.3",
-    "semantic-release": "^7.0.2"
+    "@babel/cli": "^7.0.0-beta.51",
+    "@babel/core": "^7.0.0-beta.51",
+    "@babel/node": "^7.0.0-beta.51",
+    "@babel/plugin-transform-flow-strip-types": "^7.0.0-beta.51",
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "@babel/register": "^7.0.0-beta.51",
+    "ava": "^1.0.0-beta.6",
+    "eslint": "^5.0.1",
+    "eslint-config-canonical": "^10.3.2",
+    "flow-bin": "^0.75.0",
+    "flow-copy-source": "^2.0.1",
+    "husky": "^1.0.0-rc.9",
+    "semantic-release": "^15.6.1"
   },
   "engines": {
     "node": ">6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run test"
+    }
   },
   "keywords": [
     "express"
@@ -44,7 +49,6 @@
   "scripts": {
     "build": "rm -fr ./dist && NODE_ENV=production babel ./src --out-dir ./dist --copy-files --source-maps && flow-copy-source src dist",
     "lint": "eslint ./src ./test && flow",
-    "precommit": "npm run lint && npm run test && npm run build",
     "test": "NODE_ENV=development ava --verbose --serial"
   },
   "version": "1.0.0"
